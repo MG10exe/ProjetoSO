@@ -1,7 +1,5 @@
 #!/bin/python3
 
-import threading
-
 a=0
 b=100000000
 
