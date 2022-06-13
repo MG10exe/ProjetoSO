@@ -7,4 +7,4 @@ echo "Quantas vezes o programa será executado? "
 read num
 
 n=1
-for (($n; n<=$num; n++)); do /usr/bin/time --format="%E %U %S %M" ./$file 2>> times.txt; done
+for (($n; n<=$num; n++)); do /usr/bin/time --format="%E %U %S %M" ./$file 2>> $file.txt; done
