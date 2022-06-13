@@ -1,6 +1,6 @@
 #!/bin/bash
 
-tr ':' ' ' < teste.txt > dados.txt
+tr ':' ' ' < time.txt > dados.txt
 
 #somando os tempos de execuçao
 real=$(awk '{print $2}' dados.txt | paste -sd+ | bc)
@@ -11,7 +11,7 @@ kernel=$(awk '{print $4}' dados.txt | paste -sd+ | bc)
 mem=$(awk '{print $5}' dados.txt | paste -sd+ | bc)
 
 #contando numero de linhas
-nLinhas=$(wc --lines < teste.txt)
+nLinhas=$(wc --lines < time.txt)
 
 #calculando a media
 echo "$( bc <<< "scale=2;${real} / ${nLinhas}" )"
