@@ -1,6 +1,10 @@
 #!/bin/bash
 
-echo "Digite o nome do arquivo a ser executado: "
+echo "Digite o nome do programa a ser executado: "
 read file
 
-for ((n=$1; n<=$2; n++)); do /usr/bin/time --format="%E %U %S %M" ./$file 2>> times.txt; done
+echo "Quantas vezes o programa será executado? "
+read num
+
+n=1
+for (($n; n<=$num; n++)); do /usr/bin/time --format="%E %U %S %M" ./$file 2>> times.txt; done
