@@ -1,6 +1,6 @@
 reset
 
-set title "Tempo de execuçao medio entre os cenarios 1 e 2"
+set title "Tempo de execução médio entre os cenários 1 e 2"
 set datafile separator "        "
 set key left
 set grid
@@ -17,5 +17,5 @@ set xlabel "Recursos"
 set terminal 'png' size 800,600
 set output 'usoMemCenarios.png'
 
-plot 'hhhh' using 2:xtic(1) title "cenario 1", \
-'hhhh' using 3:xtic(1) title "cenario 2"
+plot 'dados' using 2:xtic(1) title "Cenário 1", \
+'dados' using 3:xtic(1) title "Cenário 2"
