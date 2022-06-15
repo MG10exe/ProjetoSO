@@ -1,6 +1,6 @@
 reset
 
-set title "Tempo de execução médio entre os cenários 1 e 2"
+set title "Uso médio de memória"
 set datafile separator "        "
 set key left
 set grid
