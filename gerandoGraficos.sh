@@ -14,4 +14,4 @@ gnuplot < graficosTempos.plt
 #Gerando arquivo com dados do uso de memória
 paste a msemThreads.py.txt musandoThreads.py.txt | sed '1,3d' > dados
 
-gnuplot < graficoMemoria.plt
+gnuplot < graficosMemoria.plt
