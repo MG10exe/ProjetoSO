@@ -9,9 +9,9 @@ MEM" > a
 paste a msemThreads.py.txt musandoThreads.py.txt | sed '$d' > dados
 
 #Gerando gráfico dos tempos de execução
-gnuplot < grafico.plt
+gnuplot < graficosTempos.plt
 
 #Gerando arquivo com dados do uso de memória
 paste a msemThreads.py.txt musandoThreads.py.txt | sed '1,3d' > dados
 
-gnuplot < grafico2.plt
+gnuplot < graficoMemoria.plt
