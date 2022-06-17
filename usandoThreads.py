@@ -5,21 +5,19 @@ import threading
 a=0
 b=100000000
 
-def soma1():
+def somaAB():
         soma=0
-        for c in range(a, b):
-                if c<=b:
-                        soma+=c
-        soma+=b
+        for n in range(a, b+1):
+                if n<=b:
+                        soma+=n
         print(soma)
 
-def soma2():
+def somaPares():
         soma=0
-        for c in range(a, b):
-                if c<=b:
-                        soma+=c
-        soma+=b
+        for num in range(a, b+1):
+                if num%2==0:
+                        soma+=num
         print(soma)
 
-threading.Thread(target=soma1).start()
-soma2()
+threading.Thread(target=somaAB).start()
+somaPares()
