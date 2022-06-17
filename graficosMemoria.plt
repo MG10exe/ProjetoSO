@@ -8,6 +8,7 @@ set grid
 set style data histogram
 set style histogram cluster gap 2
 set style fill solid
+set style fill transparent solid 1 border lt -1
 set boxwidth 1.5
 
 set ylabel "Quantidade de memória" offset 1.5,0
